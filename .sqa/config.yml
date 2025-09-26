@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/GuillermoDiazSM/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-charcoal-eagle.sh
-        container: qc.acc_whiny-alizarin-russel
+        - /usr/bin/env sh .sqa/script.pretty-coral-snake.sh
+        container: qc.acc_craggy-cinnamon-mastiff
   QC.Doc:
     repos:
       github.com/GuillermoDiazSM/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-russet-eel.sh
-        container: qc.doc_homey-myrtle-ostrich
+        - /usr/bin/env sh .sqa/script.skinny-red-caterpillar.sh
+        container: qc.doc_sickly-pumpkin-liger
       github.com/GuillermoDiazSM/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.slimy-viridian-husky.sh
-        container: qc.doc_sunny-indigo-akbash
+        - /usr/bin/env sh .sqa/script.flaky-black-avocet.sh
+        container: qc.doc_crappy-goldenrod-albatross
       github.com/GuillermoDiazSM/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-razzmatazz-badger.sh
-        container: qc.doc_skinny-razzmatazz-zebra
+        - /usr/bin/env sh .sqa/script.shabby-bistre-squirt.sh
+        container: qc.doc_flimsy-cornflower-echidna
   QC.Lic:
     repos:
       github.com/GuillermoDiazSM/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-vermilion-zebra.sh
-        container: qc.lic_jumpy-salmon-chimpanzee
+        - /usr/bin/env sh .sqa/script.skinny-malachite-squid.sh
+        container: qc.lic_stealthy-ecru-hyena
   QC.Sec:
     repos:
       github.com/GuillermoDiazSM/testerpyo bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-purple-corgi.sh
-        container: qc.sec_queasy-olivine-crane
+        - /usr/bin/env sh .sqa/script.queasy-salmon-lionfish.sh
+        container: qc.sec_boozy-periwinkle-devil
   QC.Sty:
     repos:
       github.com/GuillermoDiazSM/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-cerise-dugong.sh
-        container: qc.sty_squeaky-beige-zebu
+        - /usr/bin/env sh .sqa/script.lovely-turquoise-wallaby.sh
+        container: qc.sty_lousy-smalt-mist
   QC.Uni:
     repos:
       github.com/GuillermoDiazSM/testerpyo pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-peach-magpie.sh
-        container: qc.uni_snappy-orchid-saola
+        - /usr/bin/env sh .sqa/script.blurry-taupe-coral.sh
+        container: qc.uni_snazzy-gold-shrew
   QC.Ver:
     repos:
       github.com/GuillermoDiazSM/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-mauve-coral.sh
-        container: qc.ver_frumpy-wisteria-mayfly
+        - /usr/bin/env sh .sqa/script.homely-chartreuse-labradoodle.sh
+        container: qc.ver_freaky-zucchini-kudu
 timeout: 5400
