@@ -1,0 +1,64 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/GuillermoDiazSM/testerpyo:
+      branch: main
+      repo: https://github.com/GuillermoDiazSM/testerpyo
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/GuillermoDiazSM/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.tasty-charcoal-eagle.sh
+        container: qc.acc_whiny-alizarin-russel
+  QC.Doc:
+    repos:
+      github.com/GuillermoDiazSM/testerpyo find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.slimy-russet-eel.sh
+        container: qc.doc_homey-myrtle-ostrich
+      github.com/GuillermoDiazSM/testerpyo git:
+        commands:
+        - /usr/bin/env sh .sqa/script.slimy-viridian-husky.sh
+        container: qc.doc_sunny-indigo-akbash
+      github.com/GuillermoDiazSM/testerpyo markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.seedy-razzmatazz-badger.sh
+        container: qc.doc_skinny-razzmatazz-zebra
+  QC.Lic:
+    repos:
+      github.com/GuillermoDiazSM/testerpyo licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.messy-vermilion-zebra.sh
+        container: qc.lic_jumpy-salmon-chimpanzee
+  QC.Sec:
+    repos:
+      github.com/GuillermoDiazSM/testerpyo bandit:
+        commands:
+        - /usr/bin/env sh .sqa/script.flimsy-purple-corgi.sh
+        container: qc.sec_queasy-olivine-crane
+  QC.Sty:
+    repos:
+      github.com/GuillermoDiazSM/testerpyo find_oph_workflows.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.tacky-cerise-dugong.sh
+        container: qc.sty_squeaky-beige-zebu
+  QC.Uni:
+    repos:
+      github.com/GuillermoDiazSM/testerpyo pytest:
+        commands:
+        - /usr/bin/env sh .sqa/script.scaly-peach-magpie.sh
+        container: qc.uni_snappy-orchid-saola
+  QC.Ver:
+    repos:
+      github.com/GuillermoDiazSM/testerpyo get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.grumpy-mauve-coral.sh
+        container: qc.ver_frumpy-wisteria-mayfly
+timeout: 5400
