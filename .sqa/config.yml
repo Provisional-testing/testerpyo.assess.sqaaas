@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/GuillermoDiazSM/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-flax-otter.sh
-        container: qc.acc_sleazy-rust-alligator
+        - /usr/bin/env sh .sqa/script.scanty-malachite-monster.sh
+        container: qc.acc_beady-wisteria-bonobo
   QC.Doc:
     repos:
       github.com/GuillermoDiazSM/testerpyo find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chewy-burgundy-lemming.sh
-        container: qc.doc_jumpy-maroon-cockroach
+        - /usr/bin/env sh .sqa/script.surly-amaranth-rabbit.sh
+        container: qc.doc_fuzzy-tomato-beaver
       github.com/GuillermoDiazSM/testerpyo git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-grey-wolverine.sh
-        container: qc.doc_surly-brass-dunker
+        - /usr/bin/env sh .sqa/script.muzzy-cinnabar-flamingo.sh
+        container: qc.doc_scummy-bistre-mammoth
       github.com/GuillermoDiazSM/testerpyo markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-persimmon-earwig.sh
-        container: qc.doc_paltry-smalt-giraffe
+        - /usr/bin/env sh .sqa/script.scaly-charcoal-eagle.sh
+        container: qc.doc_craggy-brown-dragon
   QC.Lic:
     repos:
       github.com/GuillermoDiazSM/testerpyo licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-mauve-russel.sh
-        container: qc.lic_geeky-green-crane
+        - /usr/bin/env sh .sqa/script.geeky-cornflower-hound.sh
+        container: qc.lic_snazzy-grey-okapi
   QC.Sec:
     repos:
       github.com/GuillermoDiazSM/testerpyo bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-cardinal-dalmatian.sh
-        container: qc.sec_goopy-khaki-nightingale
+        - /usr/bin/env sh .sqa/script.whiny-tomato-bulldog.sh
+        container: qc.sec_geeky-tomato-chinook
   QC.Sty:
     repos:
       github.com/GuillermoDiazSM/testerpyo find_oph_workflows.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-puce-markhor.sh
-        container: qc.sty_slimy-smalt-wasp
+        - /usr/bin/env sh .sqa/script.gamy-salmon-chipmunk.sh
+        container: qc.sty_lumpy-amethyst-blue
   QC.Uni:
     repos:
       github.com/GuillermoDiazSM/testerpyo pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-jade-coral.sh
-        container: qc.uni_sloppy-lime-squirrel
+        - /usr/bin/env sh .sqa/script.muggy-chocolate-liger.sh
+        container: qc.uni_scummy-amber-bat
   QC.Ver:
     repos:
       github.com/GuillermoDiazSM/testerpyo get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-flax-wildebeest.sh
-        container: qc.ver_gummy-purple-cougar
+        - /usr/bin/env sh .sqa/script.squeaky-indigo-tiger.sh
+        container: qc.ver_snappy-green-fowl
 timeout: 5400
